@@ -22,7 +22,7 @@ class S3Client:
         )
 
     # ==========================
-    # Базовые методы (пример)
+    # Базовые методы
     # ==========================
 
     def upload(self, file_path: str, object_name: str) -> None:
@@ -101,3 +101,4 @@ class S3Client:
                 print(f"   • {rule['ID']}: {rule['Expiration']['Days']} дней")
         except Exception as e:
             print(f"ℹ️ Lifecycle не настроен: {e}")
+
